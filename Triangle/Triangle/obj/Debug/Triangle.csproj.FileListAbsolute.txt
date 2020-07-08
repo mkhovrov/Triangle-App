@@ -1,0 +1,7 @@
+C:\Users\khovr\source\repos\Triangle\Triangle\bin\Debug\Triangle.dll
+C:\Users\khovr\source\repos\Triangle\Triangle\bin\Debug\Triangle.pdb
+C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\Triangle.csproj.CoreCompileInputs.cache
+C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\Triangle.dll
+C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\Triangle.pdb
+C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\Triangle.csprojAssemblyReference.cache
+C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\Triangle.csproj.CopyComplete
