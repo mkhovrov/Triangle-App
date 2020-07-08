@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
-using Calculation;
+using Calculations;
 
 namespace Triangle_App
 {
@@ -12,18 +12,19 @@ namespace Triangle_App
     {
         static void Main(string[] args)
         {
-            int NumberOfSides = Convert.ToInt32(Console.ReadLine());    //приём количества сторон
+            string receivedString = Console.ReadLine();
+            int NumberOfSides = Convert.ToInt32(receivedString);    //приём количества сторон
 
 
             if ((NumberOfSides > 8))
             {
                 
                 Console.WriteLine("Too many sides. Yet.");
-                Console.ReadLine();
+                Console.ReadKey();
                 return;
             }
 
-            if (NumberOfSides == 2)         //при вводе кода 2, можно выполнить проверку треугольника на прямоугольность
+            if (NumberOfSides == 2)         //при вводе 2, можно выполнить проверку треугольника на прямоугольность
             {
                 int[] a = new int[3];                     //создание массива для длин сторон проверяемого треугольника
                 for (int i = 0; i < 3; i++)
@@ -44,7 +45,7 @@ namespace Triangle_App
 
             if ((NumberOfSides == 1))
             {
-                Console.WriteLine(FigureType.Circle(Convert.ToInt32(Console.ReadLine())));
+                Console.WriteLine(FigureType.Circle(Convert.ToDouble(Console.ReadLine())));
             }   //это я так круто в одну строку уместил вызов метода нахождения площади круга через радиус вводимый с консоли, с поправкой на преобразование типа вводимой строки в число
 
             if ((NumberOfSides == 3)) 

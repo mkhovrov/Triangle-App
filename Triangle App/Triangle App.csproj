@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Triangle\Triangle\Triangle.csproj">
+    <ProjectReference Include="..\..\Triangle\Triangle\TaskLib.csproj">
       <Project>{bd758411-1984-48e0-89bd-de2dd173951b}</Project>
-      <Name>Triangle</Name>
+      <Name>TaskLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
