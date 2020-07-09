@@ -9,7 +9,7 @@ namespace Calculations
 {
     public static class FigureType
     {
-        public static double Circle(double Radius)
+        public static double Circle(double Radius)                      //высчитывает площадь круга через её радиус
         {
             if (Radius > 0)
             {
@@ -21,7 +21,7 @@ namespace Calculations
             }
         }
 
-        public static bool TriangleCheck(float a, float b, float c)
+        public static bool TriangleCheck(double a, double b, double c)     //проверка прямоугольности треугольника
         {
 
             //=========Проверка введённых данных==========
@@ -34,11 +34,11 @@ namespace Calculations
 
             //============================================
 
-            if (a > b) //несколькими if находим большую сторону (гипотенузу)
+            if (a > b) //древом if находим большую сторону (гипотенузу) и проверяем, работает ли теорема Пифагора
             {
                 if (a > c)
                 {
-                    if ((a * a) == (b * b) + (c * c)) return true;  //по теореме Пифагора проверяем, является ли треугольник прямоугольным
+                    if ((a * a) == (b * b) + (c * c)) return true;
                 }
                 else
                 {
@@ -55,11 +55,12 @@ namespace Calculations
                 {
                     if ((c * c) == (a * a) + (b * b)) return true;
                 }
-            }                                                       //не использовал поиск циклом для уменьшения затрат памяти
+            }       //не использовал поиск циклом для уменьшения затрат памяти
+
             return false;
         }
     
-        public static double Triangle(float a, float b, float c)
+        public static double Triangle(double a, double b, double c)
         {
 
             //=========Проверка введённых данных==========
@@ -72,9 +73,8 @@ namespace Calculations
 
             //============================================
 
-            float p;
-            p = (a + b + c) / 2;
-            return (Math.Sqrt(p * (p - a) * (p - b) * (p - c)));    //вычисляет формулой Герона
+            //вычисляем формулой Герона
+            return (Math.Sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c)));        
         }
     }
 }

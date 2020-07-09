@@ -35,7 +35,25 @@ namespace UnitTests
             bool expected = true;
 
             //act
-            bool? actual = Calculations.FigureType.TriangleCheck(a, b, c);
+            bool actual = Calculations.FigureType.TriangleCheck(a, b, c);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+
+        } //тест на проверку прямугольности треугольника
+
+        [TestMethod]
+        public void CheckRectangularity_Sides7_7_7_returnFalse()
+        {
+            //arrange
+            int a = 7;
+            int b = 7;
+            int c = 7;
+
+            bool expected = false;
+
+            //act
+            bool actual = Calculations.FigureType.TriangleCheck(a, b, c);
 
             //assert
             Assert.AreEqual(expected, actual);
