@@ -5654,8 +5654,8 @@
     },
     "TaskLib/1.0.0": {
       "type": "project",
-      "path": "../../Triangle/Triangle/TaskLib.csproj",
-      "msbuildProject": "../../Triangle/Triangle/TaskLib.csproj"
+      "path": "../Triangle/Triangle/TaskLib.csproj",
+      "msbuildProject": "../Triangle/Triangle/TaskLib.csproj"
     },
     "Triangle App/1.0.0": {
       "type": "project",

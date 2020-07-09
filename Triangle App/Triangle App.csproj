@@ -41,6 +41,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Triangle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Triangle\Triangle\bin\Debug\Triangle.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -50,7 +54,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Triangle\Triangle\TaskLib.csproj">
+    <ProjectReference Include="..\Triangle\Triangle\TaskLib.csproj">
       <Project>{bd758411-1984-48e0-89bd-de2dd173951b}</Project>
       <Name>TaskLib</Name>
     </ProjectReference>

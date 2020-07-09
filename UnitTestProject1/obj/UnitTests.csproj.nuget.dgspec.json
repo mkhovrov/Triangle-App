@@ -12,12 +12,22 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\khovr\\source\\repos\\Triangle\\Triangle\\TaskLib.csproj": {
-                "projectPath": "C:\\Users\\khovr\\source\\repos\\Triangle\\Triangle\\TaskLib.csproj"
+              "C:\\Users\\khovr\\source\\repos\\Triangle App\\Triangle\\Triangle\\TaskLib.csproj": {
+                "projectPath": "C:\\Users\\khovr\\source\\repos\\Triangle App\\Triangle\\Triangle\\TaskLib.csproj"
               }
             }
           }
         }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\khovr\\source\\repos\\Triangle App\\Triangle\\Triangle\\TaskLib.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\khovr\\source\\repos\\Triangle App\\Triangle\\Triangle\\TaskLib.csproj",
+        "projectName": "TaskLib",
+        "projectPath": "C:\\Users\\khovr\\source\\repos\\Triangle App\\Triangle\\Triangle\\TaskLib.csproj"
       },
       "frameworks": {
         "net472": {}

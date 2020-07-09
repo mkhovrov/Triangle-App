@@ -16,12 +16,9 @@ namespace Triangle_App
             int NumberOfSides = Convert.ToInt32(receivedString);    //приём количества сторон
 
 
-            if ((NumberOfSides > 8))
+            if ((NumberOfSides > 3))
             {
-                
                 Console.WriteLine("Too many sides. Yet.");
-                Console.ReadKey();
-                return;
             }
 
             if (NumberOfSides == 2)         //при вводе 2, можно выполнить проверку треугольника на прямоугольность
@@ -32,38 +29,28 @@ namespace Triangle_App
                     a[i] = Convert.ToInt32(Console.ReadLine());
                 }
 
-                bool? result = FigureType.TriangleCheck(a[0], a[1], a[2]);
-                if (result != true)
-                {
-                    if (result != false)
-                    {
-                        Console.WriteLine("error");
-                    } else Console.WriteLine("false");
-                } else Console.WriteLine("true");
+                Console.WriteLine(FigureType.TriangleCheck(a[0], a[1], a[2]));
+
             }
 
 
-            if ((NumberOfSides == 1))
+            if ((NumberOfSides == 1)) //проверка работоспособности функции Circle
             {
                 Console.WriteLine(FigureType.Circle(Convert.ToDouble(Console.ReadLine())));
-            }   //это я так круто в одну строку уместил вызов метода нахождения площади круга через радиус вводимый с консоли, с поправкой на преобразование типа вводимой строки в число
+            }  //приём с консоли радиуса конвертирование её в числовое значение и нахождение её площади вызовом функции Circle
 
-            if ((NumberOfSides == 3)) 
+
+            if ((NumberOfSides == 3)) //проверка работоспособности функции Triangle
             {
-                int[] a = new int[NumberOfSides];                        //создание массива для длин сторон фигуры
-                for (int i = 0; i < 3; i++)                              //ввод длин трёх сторон треугольника
+                int[] a = new int[NumberOfSides];                        
+                for (int i = 0; i < 3; i++)                              
                 {
-                    a[i] = Convert.ToInt32(Console.ReadLine());
+                    a[i] = Convert.ToInt32(Console.ReadLine()); //приём данных в массив
                 }
 
-                if (FigureType.TriangleCheck(a[0], a[1], a[2]) != null)  //с помощью TriangleCheck проверяем на "не ошибочность" введённых данных
-                {
-                    double result = FigureType.Triangle(a[0], a[1], a[2]);
-                    Console.WriteLine(result);
-                } 
-                else Console.WriteLine("error");
-
-
+                double result = FigureType.Triangle(a[0], a[1], a[2]);
+                Console.WriteLine(result);
+                
             }
 
             Console.ReadKey();

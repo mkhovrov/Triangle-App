@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle App", "Triangle App\Triangle App.csproj", "{57E1E546-C577-41BD-8B7B-5BC87B8DFEE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskLib", "..\Triangle\Triangle\TaskLib.csproj", "{BD758411-1984-48E0-89BD-DE2DD173951B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTestProject1\UnitTests.csproj", "{51E90E1E-1945-406A-A451-97EA56503BF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTestProject1\UnitTests.csproj", "{51E90E1E-1945-406A-A451-97EA56503BF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskLib", "Triangle\Triangle\TaskLib.csproj", "{BD758411-1984-48E0-89BD-DE2DD173951B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{57E1E546-C577-41BD-8B7B-5BC87B8DFEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57E1E546-C577-41BD-8B7B-5BC87B8DFEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57E1E546-C577-41BD-8B7B-5BC87B8DFEE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD758411-1984-48E0-89BD-DE2DD173951B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD758411-1984-48E0-89BD-DE2DD173951B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD758411-1984-48E0-89BD-DE2DD173951B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD758411-1984-48E0-89BD-DE2DD173951B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{51E90E1E-1945-406A-A451-97EA56503BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{51E90E1E-1945-406A-A451-97EA56503BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51E90E1E-1945-406A-A451-97EA56503BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51E90E1E-1945-406A-A451-97EA56503BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD758411-1984-48E0-89BD-DE2DD173951B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD758411-1984-48E0-89BD-DE2DD173951B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD758411-1984-48E0-89BD-DE2DD173951B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD758411-1984-48E0-89BD-DE2DD173951B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,5 +6,5 @@ C:\Users\khovr\source\repos\Triangle App\Triangle App\obj\Debug\Triangle App.exe
 C:\Users\khovr\source\repos\Triangle App\Triangle App\obj\Debug\Triangle App.pdb
 C:\Users\khovr\source\repos\Triangle App\Triangle App\obj\Debug\Triangle App.csprojAssemblyReference.cache
 C:\Users\khovr\source\repos\Triangle App\Triangle App\obj\Debug\Triangle App.csproj.CopyComplete
-C:\Users\khovr\source\repos\Triangle App\Triangle App\bin\Debug\Triangle.dll
 C:\Users\khovr\source\repos\Triangle App\Triangle App\bin\Debug\Triangle.pdb
+C:\Users\khovr\source\repos\Triangle App\Triangle App\bin\Debug\Triangle.dll

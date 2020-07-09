@@ -13,36 +13,28 @@ namespace Calculations
         {
             if (Radius > 0)
             {
-                return Radius * Radius * 3.14159265359;
+                return Radius * Radius * Math.PI;
             }
             else
             {
-                return -1;          //-1 это код ошибки обозначающий неправильный ввод данных
+                throw new ArgumentException("Radius should be > 0");
             }
         }
 
-        public static bool? TriangleCheck(float a, float b, float c) //пользуемся bool? для возможности проверки правильности ввода
+        public static bool TriangleCheck(float a, float b, float c)
         {
 
-//=========Проверка введённых данных==========
+            //=========Проверка введённых данных==========
 
-            if ((a + b) <= c)
-            {
-                return null;
-            }
+            if ((a <= 0) || (b <= 0) || (c <= 0))
+                throw new ArgumentException("Sides should be > 0");
 
-            if ((a + c) <= b)   //null это код ошибки обозначающий неправильный ввод данных
-            {
-                return null;
-            }
+            if (((a + b) <= c) || ((a + c) <= b) || ((b + c) <= a))
+                throw new ArgumentException("Not a triangle");
 
-            if ((b + c) <= a)
-            {
-                return null;
-            }
-//============================================
+            //============================================
 
-            if (a > b) //несколькими if находим большую сторону
+            if (a > b) //несколькими if находим большую сторону (гипотенузу)
             {
                 if (a > c)
                 {
@@ -69,19 +61,20 @@ namespace Calculations
     
         public static double Triangle(float a, float b, float c)
         {
-            /*                              //данная часть кода не нужна, если используем проверку TriangleCheck, где есть проверка правильности введённых данных
-                if ((a + b) <= c)
-                    return -1;              //-1 это код ошибки обозначающий неправильный ввод данных
 
-                if ((a + c) <= b)
-                    return -1;
+            //=========Проверка введённых данных==========
 
-                if ((b + c) <= a)
-                    return -1;
-            */
+            if ((a <= 0) || (b <= 0) || (c <= 0))
+                throw new ArgumentException("Sides should be > 0");
+
+            if (((a + b) <= c) || ((a + c) <= b) || ((b + c) <= a))
+                throw new ArgumentException("Not a triangle");
+
+            //============================================
+
             float p;
             p = (a + b + c) / 2;
-            return (Math.Sqrt(p * (p - a) * (p - b) * (p - c))); //вычисляет формулой Герона
+            return (Math.Sqrt(p * (p - a) * (p - b) * (p - c)));    //вычисляет формулой Герона
         }
     }
 }

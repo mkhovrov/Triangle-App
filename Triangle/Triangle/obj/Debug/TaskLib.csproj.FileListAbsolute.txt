@@ -5,3 +5,9 @@ C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\TaskLib.csproj.CopyCompl
 C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\Triangle.dll
 C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\Triangle.pdb
 C:\Users\khovr\source\repos\Triangle\Triangle\obj\Debug\TaskLib.csprojAssemblyReference.cache
+C:\Users\khovr\source\repos\Triangle App\Triangle\Triangle\bin\Debug\Triangle.dll
+C:\Users\khovr\source\repos\Triangle App\Triangle\Triangle\bin\Debug\Triangle.pdb
+C:\Users\khovr\source\repos\Triangle App\Triangle\Triangle\obj\Debug\TaskLib.csproj.CoreCompileInputs.cache
+C:\Users\khovr\source\repos\Triangle App\Triangle\Triangle\obj\Debug\Triangle.dll
+C:\Users\khovr\source\repos\Triangle App\Triangle\Triangle\obj\Debug\Triangle.pdb
+C:\Users\khovr\source\repos\Triangle App\Triangle\Triangle\obj\Debug\TaskLib.csprojAssemblyReference.cache
